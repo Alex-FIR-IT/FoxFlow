@@ -2,10 +2,10 @@
 
 
 
-The Type-Safe Unit of Work for S3. Simplify your cloud storage logic with Pydantic-powered models and atomic transaction-like operations.
+Unit of Work for S3. Simplify your cloud storage logic with Pydantic-powered models and atomic-transaction-like operations.
 
 > ⚠️ Project Status: Experimental / Work in Progress  
-> This library is in early development (Alpha). The API is subject to change. Not ready for production use yet.
+> This library is in early development (Alpha). The API is subject to change. **NOT READY** for production use yet.
 
 
 
