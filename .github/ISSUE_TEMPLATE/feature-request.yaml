@@ -1,6 +1,7 @@
 name: 🚀 FoxFlow Feature Request
 description: "Suggest a new feature for FoxFlow"
-labels: ["feature"]
+labels: ["enhancement"]
+assignees: ["Alex-FIR-IT"]
 
 body:
   - type: markdown
