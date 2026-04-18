@@ -1,0 +1,74 @@
+name: 🐛 FoxFlow Bug
+description: Report a bug or unexpected behavior in FoxFlow
+labels: ["bug"]
+assignees: ["Alex-FIR-IT"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to FoxFlow! ✊
+
+        Please provide as much information as possible to help us reproduce and fix your issue quickly.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Initial Checks
+      description: Just making sure we're on the same page.
+      options:
+        - label: I'm using the [latest version](https://github.com/Alex-FIR-IT/FoxFlow/releases/latest) of FoxFlow
+          required: true
+        - label: I've searched for my issue in [the issue tracker](https://github.com/Alex-FIR-IT/FoxFlow/issues) before opening this issue
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Please explain what you're seeing and what you would expect to see.
+
+        - **A line of code is worth a thousand words**: you can include minimal, reproducible example code below.
+    validations:
+      required: true
+
+  - type: textarea
+    id: stacktrace
+    attributes:
+      label: Stacktrace
+      description: |
+        Please provide the full stacktrace of any error you're encountering.
+    validations:
+      required: false
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Minimal, Reproducible Example
+      description: >
+        If at all possible, please add a self-contained,
+        [minimal, reproducible example](https://stackoverflow.com/help/minimal-reproducible-example)
+        that demonstrates the bug.
+
+        (This will be automatically formatted as code, so no need for backticks.)
+
+      placeholder: |
+        from foxflow import ...
+
+        ...
+      render: Python
+
+  - type: textarea
+    id: version
+    attributes:
+      label: Python, FoxFlow & packages that used by FoxFlow version
+      description: |
+        Which version of Python, FoxFlow, and packages that used by FoxFlow are you using?
+      value: |
+        - Python:
+        - FoxFlow:
+        - aiobotocore: 
+        - pydantic:
+    validations:
+      required: true
