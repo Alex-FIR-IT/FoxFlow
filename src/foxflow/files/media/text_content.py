@@ -14,7 +14,7 @@ class TextContent(BinaryContent, FromContentAbstract, ContentPropertyAbstract,):
         try:
             return self.data.decode(self.encoding)
         except UnicodeDecodeError as e:
-            raise ValueError(f"Cannot extract text from {self=}")
+            raise ValueError(f"Cannot extract text from {self=}") from e
 
 
     @classmethod
