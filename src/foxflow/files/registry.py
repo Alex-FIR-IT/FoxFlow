@@ -1,11 +1,12 @@
 from typing import Any
 from functools import cache
+
 from pydantic import ValidationError
 
-from s3uow.files.media import TextContent, ImageContent, AudioContent, BinaryContent, VideoContent, PdfContent, \
+from foxflow.files.media import TextContent, ImageContent, AudioContent, BinaryContent, VideoContent, PdfContent, \
     JsonContent
-from s3uow.files.media.url_content import UrlContent
-from s3uow.files.types import Media
+from foxflow.files.media.url_content import UrlContent
+from foxflow.files.types import Media
 
 content_registry: dict[str, type[Media]] = {
     "text/plain": TextContent,

@@ -2,7 +2,7 @@ import hashlib
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from s3uow.files.protocols.has_data_and_ext import HasDataAndExtensionAttrProtocol
+    from foxflow.files.protocols.has_data_and_ext import HasDataAndExtensionAttrProtocol
 
 
 def get_determined_filename_by_obj(obj: "HasDataAndExtensionAttrProtocol") -> str:

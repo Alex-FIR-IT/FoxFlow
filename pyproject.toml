@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "s3uow"
-version = "0.1.1"
-description = "Add your description here"
+name = "foxflow"
+dynamic = ["version"]           # ← важно!
+description = "Atomic-like S3 Framework with Saga Pattern, the Pydantic way"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -14,4 +14,7 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/s3uow"]
+packages = ["src/foxflow"]
+
+[tool.hatch.version]
+path = "src/foxflow/__init__.py"
